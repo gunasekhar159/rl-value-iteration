@@ -7,7 +7,7 @@ To find an optimal policy for an agent navigating a grid-world with slippery til
 The problem involves using the Value Iteration algorithm to find the best strategy for an agent in the Frozen Lake environment. The agent must navigate icy terrain, avoid hazards, and reach the goal while optimizing cumulative rewards in an uncertain environment.
 
 ## POLICY ITERATION ALGORITHM
-#Environment Setup:
+# Environment Setup:
 
 The code begins by importing necessary libraries and setting up the Frozen Lake environment using Gym. It also initializes the initial state, goal state, and transition probabilities (P).
 
@@ -22,6 +22,7 @@ After convergence, derive the optimal policy (pi) by selecting actions that maxi
 The code prints the optimal policy, its state-value function, the success rate of reaching the goal, and the mean undiscounted return of the optimal policy.
 
 ## VALUE ITERATION FUNCTION
+```
 Developed By: M.Gunasekhar
 Reg.No: 212221240014
 
@@ -45,6 +46,7 @@ def value_iteration(P, gamma=1.0, theta=1e-10):
         V = np.max(Q, axis=1)
     pi = lambda s: {s: a for s, a in enumerate(np.argmax(Q, axis=1))}[s]
     return V, pi
+```
 ## OUTPUT:
 <img width="297" alt="re exp-4 " src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/3cfa25fc-c5c8-4ea8-8873-9ad25d181695">
 <img width="428" alt="re exp-4 1" src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/f91f0995-82b3-486d-8f77-3177037f203d">
