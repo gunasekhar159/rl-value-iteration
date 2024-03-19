@@ -7,19 +7,25 @@ To find an optimal policy for an agent navigating a grid-world with slippery til
 The problem involves using the Value Iteration algorithm to find the best strategy for an agent in the Frozen Lake environment. The agent must navigate icy terrain, avoid hazards, and reach the goal while optimizing cumulative rewards in an uncertain environment.
 
 ## POLICY ITERATION ALGORITHM
-# Environment Setup:
+##### Environment Setup:
 
-The code begins by importing necessary libraries and setting up the Frozen Lake environment using Gym. It also initializes the initial state, goal state, and transition probabilities (P).
+* The code begins by importing necessary libraries and setting up the Frozen Lake environment using Gym. It also initializes the initial state, goal state, and transition probabilities (P).
 
-# Value Iteration Algorithm:
+##### Value Iteration Algorithm:
 
-The core algorithm used in this code is Value Iteration. Value Initialization:
-Initialize a value function (V) with zeros for each state. Value Iteration Loop:
-For each state (s), calculate the Q-values for all possible actions (a) using the Bellman equation. The Q-value represents the expected cumulative reward when taking action 'a' from state 's'.
-Update the value function (V) by taking the maximum Q-value for each state.
-Check for convergence: If the maximum change in value function (V) is smaller than a threshold (theta), break the loop.
-After convergence, derive the optimal policy (pi) by selecting actions that maximize the Q-values. Results:
-The code prints the optimal policy, its state-value function, the success rate of reaching the goal, and the mean undiscounted return of the optimal policy.
+* The core algorithm used in this code is Value Iteration. Value Initialization:
+  
+* Initialize a value function (V) with zeros for each state. Value Iteration Loop:
+
+* For each state (s), calculate the Q-values for all possible actions (a) using the Bellman equation. The Q-value represents the expected cumulative reward when taking action 'a' from state 's'.
+
+* Update the value function (V) by taking the maximum Q-value for each state.
+
+* Check for convergence: If the maximum change in value function (V) is smaller than a threshold (theta), break the loop.
+
+* After convergence, derive the optimal policy (pi) by selecting actions that maximize the Q-values. 
+
+
 
 ## VALUE ITERATION FUNCTION
 ```
@@ -52,7 +58,6 @@ def value_iteration(P, gamma=1.0, theta=1e-10):
 
 
 
-<img width="428" alt="re exp-4 1" src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/f91f0995-82b3-486d-8f77-3177037f203d">
 
 
 
