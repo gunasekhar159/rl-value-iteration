@@ -54,9 +54,11 @@ def value_iteration(P, gamma=1.0, theta=1e-10):
     return V, pi
 ```
 ## OUTPUT:
-<img width="428" alt="re exp-4 1" src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/0112d142-d031-417b-8375-756c12505796">
+<img width="902" alt="image" src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/b7b99379-8bdf-4209-aaec-8f909be7b40a">
 
-<img width="297" alt="re exp-4 " src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/3cfa25fc-c5c8-4ea8-8873-9ad25d181695">
+<img width="887" alt="image" src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/7cfbabe4-f7b2-469b-92c1-d0ae18d9556e">
+
+
 
 
 
