@@ -49,6 +49,9 @@ def value_iteration(P, gamma=1.0, theta=1e-10):
 ```
 ## OUTPUT:
 <img width="297" alt="re exp-4 " src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/3cfa25fc-c5c8-4ea8-8873-9ad25d181695">
+
+
+
 <img width="428" alt="re exp-4 1" src="https://github.com/gunasekhar159/rl-value-iteration/assets/95043391/f91f0995-82b3-486d-8f77-3177037f203d">
 
 
